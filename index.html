@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of NAVEENKUMAR. D - Electrical & Electronics Engineering Student specializing in Power Electronics, IoT, Embedded Systems, and Renewable Energy.">
+    <meta name="keywords" content="NAVEENKUMAR. D, Portfolio, Electrical Engineering, EEE, Embedded Systems, IoT, Renewable Energy, MATLAB, Power Electronics, Nandha Engineering College">
+    <meta name="author" content="NAVEENKUMAR. D">
+    <title>NAVEENKUMAR. D | Electrical & Electronics Engineering Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Futuristic Emerald Cursor Elements -->
+    <div id="cursor-dot" class="cursor-dot"></div>
+    <div id="cursor-ring" class="cursor-ring"></div>
+    <canvas id="cursor-particles" class="cursor-particles-canvas"></canvas>
+
+    <!-- Atmospheric Lightning Screen Flash Overlay -->
+    <div id="lightning-flash" class="lightning-flash-overlay"></div>
+
+    <!-- Engineering Mode Grid Overlay (Easter Egg 'E') -->
+    <div id="engineering-grid-overlay" class="engineering-grid-overlay"></div>
+    <div id="engineering-toast" class="engineering-toast hidden">
+        <i class="fa-solid fa-microchip"></i> Engineering Schematic Mode: Active [Press 'E' to toggle]
+    </div>
+
+    <!-- Canvas Transparent Lightning Background Overlay -->
+    <canvas id="mountain-canvas"></canvas>
+    
+    <!-- Dark Emerald Vignette and Gradient Overlay -->
+    <div class="cinematic-overlay"></div>
+
+    <!-- Floating Command Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-box">ND</span>
+                <span class="logo-text">NAVEENKUMAR. D</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#industrial-visit" class="nav-link">Industrial Visit</a>
+                <a href="#hackathons" class="nav-link">Hackathons</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="assets/resume.jpg" target="_blank" class="btn btn-outline btn-sm nav-resume-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+                <button class="fx-toggle-btn" id="fx-toggle" title="Toggle Atmospheric Lighting Effects">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Page Content Wrap -->
+    <main class="main-content">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge fade-in">
+                        <span class="pulse-indicator"></span>
+                        <span>Available for Internships & Placements</span>
+                    </div>
+
+                    <h1 class="hero-title fade-in">
+                        Hi, I'm <span class="highlight-text">NAVEENKUMAR. D</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle fade-in">
+                        Electrical & Electronics Engineering Student
+                    </h2>
+
+                    <p class="hero-description fade-in">
+                        Passionate about <span class="text-white">Power Electronics</span>, <span class="text-white">Embedded Systems</span>, <span class="text-white">IoT</span>, and <span class="text-white">Renewable Energy Systems</span>. Dedicated to engineering innovative, energy-efficient solutions for tomorrow.
+                    </p>
+
+                    <div class="hero-meta fade-in">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Nandha Engineering College, Erode</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>CGPA: <strong>7.5</strong> / 10.0</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons fade-in">
+                        <a href="assets/resume.jpg" class="btn btn-primary" id="btn-download-resume" target="_blank">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fa-solid fa-compass"></i> Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials fade-in">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://linkedin.com/in/naveendhanapal" target="_blank" class="social-link" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Classytobi23" target="_blank" class="social-link" title="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:naveendhanapal23@gmail.com" class="social-link" title="Email Direct">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:9894976332" class="social-link" title="Phone Call">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-profile-container fade-in">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card-glow"></div>
+                        <div class="profile-card">
+                            <div class="profile-circular-frame">
+                                <img src="assets/profile.jpg" alt="NAVEENKUMAR. D - Profile Photo" class="profile-img-circle">
+                                <div class="profile-overlay-tag">
+                                    <i class="fa-solid fa-bolt"></i> EEE Specialist
+                                </div>
+                            </div>
+                            <div class="profile-card-footer">
+                                <div class="profile-info">
+                                    <span class="name">NAVEENKUMAR. D</span>
+                                    <span class="degree">B.E. EEE (2024 – 2028)</span>
+                                </div>
+                                <div class="profile-cgpa-pill">
+                                    <span>CGPA</span>
+                                    <strong>7.5</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </span>
+                    <span class="scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-user"></i> Overview</span>
+                    <h2 class="section-title">About <span class="highlight-text">Me</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-cinematic-grid">
+                    <!-- About Profile Photo Column -->
+                    <div class="about-photo-column scroll-reveal">
+                        <div class="about-photo-frame">
+                            <div class="about-photo-glow"></div>
+                            <img src="assets/about-profile.jpg" alt="NAVEENKUMAR. D" class="about-profile-circle">
+                            <div class="about-photo-badge">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>EEE Undergraduate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Text Column -->
+                    <div class="about-text-column">
+                        <div class="about-main-card glass-card scroll-reveal">
+                            <h3 class="card-heading"><i class="fa-solid fa-bullseye accent-icon"></i> Career Objective</h3>
+                            <p class="objective-text">
+                                Motivated and enthusiastic Electrical and Electronics Engineering student with a CGPA of 7.5, eager to apply technical knowledge and problem-solving skills in a professional environment. Passionate about Industry 4.0, the Internet of Things (IoT), renewable energy and artificial intelligence. Seeking an internship or entry-level opportunity to enhance my technical skills, gain industry experience and contribute effectively to organizational success.
+                            </p>
+
+                            <div class="about-stats-grid">
+                                <div class="stat-box">
+                                    <i class="fa-solid fa-building-columns stat-icon"></i>
+                                    <div class="stat-data">
+                                        <span class="stat-value">B.E. EEE</span>
+                                        <span class="stat-label">Nandha Engg College</span>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <i class="fa-solid fa-award stat-icon"></i>
+                                    <div class="stat-data">
+                                        <span class="stat-value">7.5 CGPA</span>
+                                        <span class="stat-label">Academic Score</span>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <i class="fa-solid fa-microchip stat-icon"></i>
+                                    <div class="stat-data">
+                                        <span class="stat-value">IoT & Power</span>
+                                        <span class="stat-label">Core Focus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-side-row">
+                            <!-- Soft Skills -->
+                            <div class="glass-card scroll-reveal">
+                                <h3 class="card-heading-sm"><i class="fa-solid fa-brain accent-icon"></i> Soft Skills</h3>
+                                <div class="pill-cloud">
+                                    <span class="skill-pill"><i class="fa-solid fa-users"></i> Leadership</span>
+                                    <span class="skill-pill"><i class="fa-solid fa-comments"></i> Communication</span>
+                                    <span class="skill-pill"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+                                    <span class="skill-pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                                    <span class="skill-pill"><i class="fa-solid fa-bolt"></i> Quick Learning</span>
+                                    <span class="skill-pill"><i class="fa-solid fa-sliders"></i> Adaptability</span>
+                                </div>
+                            </div>
+
+                            <!-- Languages & Hobbies -->
+                            <div class="glass-card scroll-reveal">
+                                <h3 class="card-heading-sm"><i class="fa-solid fa-language accent-icon"></i> Languages</h3>
+                                <div class="language-list">
+                                    <div class="lang-item">
+                                        <span class="lang-name">English</span>
+                                        <span class="lang-level">Professional</span>
+                                    </div>
+                                    <div class="lang-item">
+                                        <span class="lang-name">Tamil</span>
+                                        <span class="lang-level">Native</span>
+                                    </div>
+                                </div>
+
+                                <h3 class="card-heading-sm mt-4"><i class="fa-solid fa-heart accent-icon"></i> Hobbies & Interests</h3>
+                                <ul class="hobby-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Learning about emerging technologies & AI</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Exploring IoT & renewable energy innovations</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Watching educational & technology content</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Video editing & creative content creation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. CURRENTLY BUILDING DASHBOARD WIDGET -->
+        <section class="section-padding-sm">
+            <div class="container">
+                <div class="currently-building-card glass-card scroll-reveal">
+                    <div class="cb-header">
+                        <div class="cb-title-box">
+                            <span class="cb-live-indicator"><span class="pulse-indicator"></span> Active Engineering Project</span>
+                            <h3 class="cb-title"><i class="fa-solid fa-screwdriver-wrench accent-icon"></i> Currently Building: Smart Solar Lighting & Microgrid Prototype</h3>
+                        </div>
+                        <span class="cb-status-badge">Phase 2: Prototyping</span>
+                    </div>
+
+                    <p class="cb-desc">
+                        Engineering an upgraded iteration of the Smart Solar Street Lighting system with integrated telemetry micro-controllers, automated LDR ambient switching, and battery charge cycle optimization.
+                    </p>
+
+                    <div class="cb-progress-wrapper">
+                        <div class="cb-progress-info">
+                            <span class="cb-label">System Development Progress</span>
+                            <span class="cb-percent">75% Complete</span>
+                        </div>
+                        <div class="cb-progress-bar">
+                            <div class="cb-progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="cb-tech-row">
+                        <span class="tech-chip"><i class="fa-solid fa-microchip"></i> ESP32 / Microcontrollers</span>
+                        <span class="tech-chip"><i class="fa-solid fa-solar-panel"></i> Solar PV Controller</span>
+                        <span class="tech-chip"><i class="fa-solid fa-code"></i> Embedded C</span>
+                        <span class="tech-chip"><i class="fa-solid fa-network-wired"></i> IoT Telemetry</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. SKILLS SECTION -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-gears"></i> Technical Core</span>
+                    <h2 class="section-title">Technical <span class="highlight-text">Skills</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">Interactive EEE core architecture surrounded by domain competencies.</p>
+                </div>
+
+                <!-- Interactive Central EEE Core Diagram -->
+                <div class="eee-skills-container scroll-reveal">
+                    <div class="eee-core-node">
+                        <div class="core-ring-pulse"></div>
+                        <div class="core-badge">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>EEE CORE</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <!-- Skill 1 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>MATLAB</h3>
+                                    <span class="skill-category">Simulation & Analysis</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Power system modeling, circuit simulation, matrix computation, and signal processing analysis.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Simulink</span>
+                                <span class="tag">Circuit Analysis</span>
+                                <span class="tag">Control Systems</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>C Programming</h3>
+                                    <span class="skill-category">Basics & Logic</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Fundamental programming algorithms, data structures, pointer arithmetic, and hardware logic.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Embedded C</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Logic Design</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-brands fa-java"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Java</h3>
+                                    <span class="skill-category">Basics</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Object-Oriented Programming (OOP) concepts, class structures, method overriding, and application logic.</p>
+                            <div class="skill-tags">
+                                <span class="tag">OOPs</span>
+                                <span class="tag">Java Core</span>
+                                <span class="tag">Syntax & Logic</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Power Electronics</h3>
+                                    <span class="skill-category">Core Domain</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Converter designs, semiconductor switching circuits, DC-DC buck/boost converters, and inverter systems.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Inverters</span>
+                                <span class="tag">Converters</span>
+                                <span class="tag">Switching Devices</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 5 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Embedded Systems</h3>
+                                    <span class="skill-category">Hardware Interface</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Microcontroller programming, sensor integration, actuator interfacing, PWM signals, and timer counters.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Microcontrollers</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Interfacing</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 6 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Internet of Things (IoT)</h3>
+                                    <span class="skill-category">Smart Automation</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Smart sensor node deployments, telemetry data transmission, Industry 4.0 standards, and wireless protocols.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Industry 4.0</span>
+                                <span class="tag">Smart Nodes</span>
+                                <span class="tag">Wireless Data</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 7 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-solar-panel"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Renewable Energy</h3>
+                                    <span class="skill-category">Green Tech</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Solar PV system harvesting, wind power generation, hybrid energy storage, and clean grid integration.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Solar PV</span>
+                                <span class="tag">Wind Power</span>
+                                <span class="tag">Energy Storage</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 8 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Basic Electrical Concepts</h3>
+                                    <span class="skill-category">Fundamentals</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Circuit theory, KVL/KCL, AC/DC machines, transformer characteristics, and electrical safety standards.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Circuit Theory</span>
+                                <span class="tag">AC/DC Machines</span>
+                                <span class="tag">Transformers</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 9 -->
+                        <div class="skill-card glass-card tilt-card" data-tilt>
+                            <div class="skill-icon-header">
+                                <div class="skill-icon-box">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                </div>
+                                <div class="skill-title-meta">
+                                    <h3>Microsoft Office</h3>
+                                    <span class="skill-category">Productivity</span>
+                                </div>
+                            </div>
+                            <p class="skill-desc">Technical report generation in Word, data processing & chart analysis in Excel, presentation crafting in PowerPoint.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Excel</span>
+                                <span class="tag">Word</span>
+                                <span class="tag">PowerPoint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. PROJECTS SECTION -->
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Academic <span class="highlight-text">Projects</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">Practical engineering implementations focused on renewable power generation, agricultural irrigation, and smart grid automation.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- PROJECT 1: Turbigen Highway Power System -->
+                    <article class="project-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="project-badge">Project 01</div>
+                        <div class="project-icon-top">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3 class="project-title">Turbigen Highway Power System</h3>
+                        <span class="project-subtitle">Dual Solar & Vehicle-Induced Wind Energy Harvester</span>
+                        
+                        <p class="project-description">
+                            A comprehensive renewable energy system that harvests both solar energy and vehicle-induced wind turbulence along busy highways to generate clean electrical power. 
+                        </p>
+
+                        <!-- Interactive Energy Flow Diagram Component -->
+                        <div class="energy-flow-diagram">
+                            <div class="diagram-title"><i class="fa-solid fa-bolt accent-icon"></i> Highway Energy Flow Pipeline</div>
+                            <div class="flow-pipeline">
+                                <div class="flow-node" title="Solar PV Panels">
+                                    <i class="fa-solid fa-sun"></i>
+                                    <span>SOLAR ENERGY</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node" title="Highway Airflow Turbulence">
+                                    <i class="fa-solid fa-wind"></i>
+                                    <span>VEHICLE WIND</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node" title="VAWT Turbines Generator">
+                                    <i class="fa-solid fa-gears"></i>
+                                    <span>GENERATION</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node" title="Converter Power Conditioning">
+                                    <i class="fa-solid fa-microchip"></i>
+                                    <span>POWER SYSTEM</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node highlight-node" title="Battery Storage & Grid Load">
+                                    <i class="fa-solid fa-car-battery"></i>
+                                    <span>BATTERY / LOAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-bullets">
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Designed a specialized vertical-axis wind turbine layout to capture vehicle airflow.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Integrated photovoltaic solar panels for continuous daytime energy generation.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Proposed utility applications for powering highway street lights, traffic signals, and battery storage stations.</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <span class="tech-chip">Renewable Energy</span>
+                            <span class="tech-chip">Wind Turbine</span>
+                            <span class="tech-chip">Solar PV</span>
+                            <span class="tech-chip">Highway Harvesting</span>
+                            <span class="tech-chip">Battery Storage</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button class="btn btn-secondary btn-sm btn-project-detail" data-project="turbigen">
+                                <i class="fa-solid fa-circle-info"></i> Project Details & Architecture
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: Highway Wind and Solar Hybrid Power System for Agricultural Irrigation -->
+                    <article class="project-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="project-badge">Project 02</div>
+                        <div class="project-icon-top">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="project-title">Highway Wind and Solar Hybrid Power System for Agricultural Irrigation</h3>
+                        <span class="project-subtitle">Dual Solar & Vehicle-Induced Wind Energy Harvesting for Agricultural Irrigation</span>
+
+                        <p class="project-description">
+                            A specialized hybrid renewable energy system designed to harvest solar energy and vehicular wind turbulence along highway corridors to power automated pumps and energy storage systems for agricultural irrigation.
+                        </p>
+
+                        <!-- Energy Flow Mini Diagram for Irrigation -->
+                        <div class="energy-flow-diagram">
+                            <div class="diagram-title"><i class="fa-solid fa-bolt accent-icon"></i> Irrigation Power Pipeline</div>
+                            <div class="flow-pipeline">
+                                <div class="flow-node">
+                                    <i class="fa-solid fa-sun"></i>
+                                    <span>SOLAR & WIND</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>HYBRID POWER</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node">
+                                    <i class="fa-solid fa-water"></i>
+                                    <span>WATER PUMP</span>
+                                </div>
+                                <div class="flow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flow-node highlight-node">
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                    <span>IRRIGATION</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-bullets">
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Engineered highway-side hybrid harvesting to support rural agricultural water supply grid systems.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Formulated power conditioning circuits for direct water pump drive and battery bank charging.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Promotes sustainable agricultural practices by utilizing unexploited highway energy resources.</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <span class="tech-chip">Solar Energy</span>
+                            <span class="tech-chip">Wind Harvesting</span>
+                            <span class="tech-chip">Agricultural Irrigation</span>
+                            <span class="tech-chip">Microgrid</span>
+                            <span class="tech-chip">Power Electronics</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button class="btn btn-secondary btn-sm btn-project-detail" data-project="highway_irrigation">
+                                <i class="fa-solid fa-circle-info"></i> Project Details & Specifications
+                            </button>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. ENGINEERING JOURNEY TIMELINE SECTION -->
+        <section id="journey" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-route"></i> Career Pathway</span>
+                    <h2 class="section-title">Engineering <span class="highlight-text">Journey</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">Chronological progression across academics, technical projects, NPTEL certifications, and leadership activities.</p>
+                </div>
+
+                <div class="journey-timeline-wrapper">
+                    <div class="journey-line"></div>
+
+                    <!-- Milestone 1: Education -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">01. ACADEMIC FOUNDATION</span>
+                            <h3 class="journey-title">B.E. Electrical & Electronics Engineering</h3>
+                            <span class="journey-meta">Nandha Engineering College, Erode | 2024 – 2028 | CGPA: 7.5</span>
+                            <p class="journey-desc">Started undergraduate studies in EEE gaining deep fundamental knowledge in circuit theory, AC/DC machines, control systems, and power system analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2: Technical Skills -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-gears"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">02. TECHNICAL SKILL DEVELOPMENT</span>
+                            <h3 class="journey-title">Programming & Simulation Competencies</h3>
+                            <span class="journey-meta">MATLAB, Embedded C, Java & Power Electronics</span>
+                            <p class="journey-desc">Mastered MATLAB Simulink for power circuit modeling, basic C programming for embedded logic, and Java for object-oriented software design.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3: Academic Projects -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-wind"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">03. HARDWARE & RENEWABLE PROJECTS</span>
+                            <h3 class="journey-title">Turbigen & Agricultural Irrigation Hybrid Power Systems</h3>
+                            <span class="journey-meta">Renewable Power Generation & Smart Automation</span>
+                            <p class="journey-desc">Formulated the Turbigen Highway Power System and Highway Wind and Solar Hybrid Power System for Agricultural Irrigation, alongside automated smart solar street lighting controllers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4: Certifications -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-award"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">04. NPTEL NATIONAL CERTIFICATIONS</span>
+                            <h3 class="journey-title">Industry 4.0 & Internet of Things (IoT)</h3>
+                            <span class="journey-meta">IIT / NPTEL Online Accreditations</span>
+                            <p class="journey-desc">Successfully completed nationwide NPTEL certification courses in Industry 4.0, IIoT architecture, and fundamental Internet of Things node design.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 5: Hackathons & Leadership -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-users"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">05. LEADERSHIP & COMPETITIONS</span>
+                            <h3 class="journey-title">Student Association & Hackathon Participation</h3>
+                            <span class="journey-meta">Nandha Engineering College Student Council</span>
+                            <p class="journey-desc">Served as Student Association Member bridging students and college management, organizing department technical symposiums and competing in hackathons.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 6: Future Goals -->
+                    <div class="journey-item scroll-reveal">
+                        <div class="journey-node"><i class="fa-solid fa-bullseye"></i></div>
+                        <div class="journey-card glass-card">
+                            <span class="journey-step">06. FUTURE HORIZON</span>
+                            <h3 class="journey-title">Internships & Core Engineering Career</h3>
+                            <span class="journey-meta">Targeting EEE, IoT & Power Electronics Roles</span>
+                            <p class="journey-desc">Eager to contribute technical skills and innovation mindset to industry entry-level positions, microgrid projects, and IoT power automation teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 7. CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Qualifications</span>
+                    <h2 class="section-title">Certifications & <span class="highlight-text">Courses</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">National Programme on Technology Enhanced Learning (NPTEL) certified courses.</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="cert-badge-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer"><i class="fa-solid fa-graduation-cap"></i> NPTEL Online Certification</span>
+                            <h3 class="cert-title">Introduction to Industry 4.0 and Industrial Internet of Things</h3>
+                            <p class="cert-desc">Covered smart manufacturing systems, cyber-physical integration, Industrial IoT protocols, sensor networks, cloud computing, and automated industrial architectures.</p>
+                            <div class="cert-footer">
+                                <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Successfully Completed</span>
+                                <span class="cert-org">IIT / NPTEL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="cert-badge-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer"><i class="fa-solid fa-graduation-cap"></i> NPTEL Online Certification</span>
+                            <h3 class="cert-title">Introduction to Internet of Things (IoT)</h3>
+                            <p class="cert-desc">Mastered core IoT architecture, sensor node design, wireless communication protocols (MQTT/HTTP), microcontrollers, and IoT application development.</p>
+                            <div class="cert-footer">
+                                <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Successfully Completed</span>
+                                <span class="cert-org">IIT / NPTEL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 8. HACKATHONS & ACTIVITIES SHOWCASE SECTION -->
+        <section id="hackathons" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-trophy"></i> Technical Competitions</span>
+                    <h2 class="section-title">Hackathons & <span class="highlight-text">Activities</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">Student association leadership, hackathon problem-solving, and technical symposiums.</p>
+                </div>
+
+                <div class="activities-grid">
+                    <!-- Card 1 -->
+                    <div class="activity-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="act-header">
+                            <div class="act-icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <div>
+                                <h3 class="act-title">Student Association Member</h3>
+                                <span class="act-org">Nandha Engineering College</span>
+                            </div>
+                        </div>
+                        <div class="act-body">
+                            <div class="act-meta-box">
+                                <span class="meta-label">Role:</span>
+                                <span class="meta-val">Student Liaison & Event Coordinator</span>
+                            </div>
+                            <p class="act-desc">Represented students by acting as a bridge between students and college management, organizing academic events and student engagement activities.</p>
+                        </div>
+                        <ul class="act-bullets">
+                            <li>Facilitated student feedback channels with faculty heads.</li>
+                            <li>Coordinated department technical seminars and workshop sessions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="activity-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="act-header">
+                            <div class="act-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div>
+                                <h3 class="act-title">Technical Hackathon Participation</h3>
+                                <span class="act-org">Engineering Competitions</span>
+                            </div>
+                        </div>
+                        <div class="act-body">
+                            <div class="act-meta-box">
+                                <span class="meta-label">Focus Area:</span>
+                                <span class="meta-val">IoT & Smart Energy Problem Solving</span>
+                            </div>
+                            <p class="act-desc">Participated in technical hackathons collaborating with peer team members to design innovative hardware and renewable energy prototypes under time constraints.</p>
+                        </div>
+                        <ul class="act-bullets">
+                            <li>Engineered energy-harvesting concepts for highway infrastructure.</li>
+                            <li>Applied embedded microcontroller control logic for smart loads.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="activity-card glass-card scroll-reveal tilt-card" data-tilt>
+                        <div class="act-header">
+                            <div class="act-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div>
+                                <h3 class="act-title">Seminars & Technical Workshops</h3>
+                                <span class="act-org">Emerging EEE & Industry 4.0</span>
+                            </div>
+                        </div>
+                        <div class="act-body">
+                            <div class="act-meta-box">
+                                <span class="meta-label">Domains:</span>
+                                <span class="meta-val">Industry 4.0, IIoT & Clean Energy</span>
+                            </div>
+                            <p class="act-desc">Attended state-level technical seminars focusing on emerging innovations in Electrical & Electronics Engineering, smart grids, and sustainable green technology.</p>
+                        </div>
+                        <ul class="act-bullets">
+                            <li>Gained insights into cyber-physical manufacturing integration.</li>
+                            <li>Strengthened practical engineering project development methods.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INDUSTRIAL VISIT SECTION -->
+        <section id="industrial-visit" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-industry"></i> Industrial Exposure</span>
+                    <h2 class="section-title">Industrial <span class="highlight-text">Visit</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">On-site industrial exposure to manufacturing practices, electrical equipment, and real-world engineering concepts.</p>
+                </div>
+
+                <div class="industrial-visit-card glass-card scroll-reveal tilt-card" data-tilt>
+                    <div class="iv-top-bar">
+                        <div class="iv-header-left">
+                            <span class="iv-badge"><i class="fa-solid fa-building-circle-check"></i> Industrial Visit</span>
+                            <h3 class="iv-company-name">CORAL COIL INDIA PRIVATE LIMITED</h3>
+                        </div>
+                        <div class="iv-date-badge">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Visit Date: <strong>[Date Placeholder]</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="iv-meta-row">
+                        <div class="iv-meta-item">
+                            <i class="fa-solid fa-location-dot accent-icon"></i>
+                            <span>Erode, Tamil Nadu</span>
+                        </div>
+                        <div class="iv-meta-item">
+                            <i class="fa-solid fa-gears accent-icon"></i>
+                            <span>Industry: Machinery / Manufacturing</span>
+                        </div>
+                        <div class="iv-meta-item">
+                            <i class="fa-solid fa-bolt accent-icon"></i>
+                            <span>Key Area: Electrical & Manufacturing Systems</span>
+                        </div>
+                    </div>
+
+                    <p class="iv-summary">
+                        Visited a manufacturing environment and gained exposure to industrial engineering practices, electrical equipment, manufacturing processes, and the application of engineering concepts in industry.
+                    </p>
+
+                    <div class="iv-company-context">
+                        <div class="iv-context-title"><i class="fa-solid fa-circle-info accent-icon"></i> Facility Information & Capabilities:</div>
+                        <p class="iv-context-text">
+                            Located at S.F. No. 511/3, Coral Avenue, Injampalli Village, Modakurichi (Via), Erode, Tamil Nadu – 638104. Manufacturing activity focuses on stator coils used in wind-operated electricity generators, supported by an electrical testing laboratory accredited under ISO/IEC 17025:2017.
+                        </p>
+                    </div>
+
+                    <div class="iv-learning-section">
+                        <h4 class="iv-learning-heading"><i class="fa-solid fa-lightbulb accent-icon"></i> Key Learnings:</h4>
+                        <div class="iv-learning-grid">
+                            <div class="iv-learning-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Understanding of industrial manufacturing practices</span>
+                            </div>
+                            <div class="iv-learning-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Exposure to electrical engineering applications</span>
+                            </div>
+                            <div class="iv-learning-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Awareness of industrial safety and quality practices</span>
+                            </div>
+                            <div class="iv-learning-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Understanding how engineering concepts are applied in real-world manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- RESUME SECTION -->
+        <section id="resume" class="section-padding">
+            <div class="container">
+                <div class="resume-banner-card glass-card scroll-reveal center">
+                    <div class="resume-badge">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Document Overview</span>
+                    </div>
+                    <h2 class="resume-title">Official Engineering <span class="highlight-text">Resume</span></h2>
+                    <p class="resume-desc">
+                        Access my verified academic profile, technical competencies, engineering project portfolio, and NPTEL certifications.
+                    </p>
+                    <div class="resume-action-buttons">
+                        <a href="assets/resume.jpg" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-eye"></i> View Resume
+                        </a>
+                        <a href="assets/resume.jpg" download="NAVEENKUMAR_D_Resume.jpg" class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 9. CONTACT SECTION -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="highlight-text">Me</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-sub-desc">Feel free to reach out for internship opportunities, project collaborations, or technical inquiries.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card glass-card scroll-reveal">
+                        <h3 class="contact-card-title">Contact Information</h3>
+                        <p class="contact-card-desc">I am actively looking for internship and entry-level opportunities in Electrical Engineering, IoT, and Power Systems.</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-user"></i></div>
+                                <div class="c-text">
+                                    <span class="label">Full Name</span>
+                                    <span class="val">NAVEENKUMAR. D</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-text">
+                                    <span class="label">Phone</span>
+                                    <a href="tel:9894976332" class="val link-val">+91 9894976332</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-text">
+                                    <span class="label">Email</span>
+                                    <a href="mailto:naveendhanapal23@gmail.com" class="val link-val">naveendhanapal23@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-text">
+                                    <span class="label">Address</span>
+                                    <span class="val">Deevatipatti, Salem, Tamil Nadu</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="c-text">
+                                    <span class="label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/naveendhanapal" target="_blank" class="val link-val">NAVEENKUMAR. D</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-resume-cta">
+                            <a href="assets/resume.jpg" target="_blank" class="btn btn-primary w-full">
+                                <i class="fa-solid fa-file-pdf"></i> View & Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-card scroll-reveal">
+                        <h3 class="contact-card-title">Send Me a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" required placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" required placeholder="Enter your email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Subject (e.g. Internship Inquiry)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="form-toast" class="form-toast hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-overlay hidden" aria-hidden="true">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-body" class="modal-body">
+                <!-- Dynamically populated via script -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-box">ND</span>
+                <span class="logo-text">NAVEENKUMAR. D</span>
+            </div>
+            <p class="footer-tagline">Electrical and Electronics Engineering Student | Nandha Engineering College</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/naveendhanapal" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Classytobi23" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:naveendhanapal23@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 NAVEENKUMAR. D. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
